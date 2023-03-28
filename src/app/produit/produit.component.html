@@ -1,0 +1,19 @@
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Nom</th>
+        <th scope="col">Prix</th>
+        <th scope="col">Restant</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let p of listeP$ |async">
+        <th scope="row">{{p.Id}}</th>
+        <td>{{p.Nom}}</td>
+        <td>{{p.Prix}}</td>
+        <td>{{p.Restant}}</td>
+      </tr>
+    </tbody>
+  </table>

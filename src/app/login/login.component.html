@@ -1,0 +1,13 @@
+<form>
+    <div class="mb-3">
+      <label class="form-label">Login</label>
+      <input type="text" class="form-control" name="login" [(ngModel)]="login">
+      
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Mot de passe</label>
+      <input type="password" class="form-control" name="mdp" [(ngModel)]="mdp">
+    </div>
+   
+    <button (click)="connexion()"  class="btn btn-primary">Submit</button>
+  </form>
